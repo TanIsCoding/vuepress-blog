@@ -31,7 +31,7 @@ export default hopeTheme({
 
   blog: {
     description: "tan is coding",
-    intro: "/intro.html",
+    intro: "/about",
     medias: {
       // Baidu: "https://example.com",
       // Bitbucket: "https://example.com",

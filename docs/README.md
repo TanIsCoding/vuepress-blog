@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: home
-title: 博客主页
+title: 主页
 heroImage: /logo.png
 heroText: 忐のBlog
 heroFullScreen: true
