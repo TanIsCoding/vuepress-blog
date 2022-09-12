@@ -7,7 +7,6 @@ export default hopeTheme({
 
   author: {
     name: "忐",
-    url: "/",
   },
 
   iconAssets: "iconfont",
@@ -24,7 +23,7 @@ export default hopeTheme({
   // sidebar
   sidebar: sidebar,
 
-  footer: "默认页脚",
+  footer: "Tan still code.",
 
   displayFooter: true,
 
