@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "TanIsCoding/vuepress-blog",
 
   docsDir: "demo/src",
 
@@ -44,7 +44,7 @@ export default hopeTheme({
       // Facebook: "https://example.com",
       // Flipboard: "https://example.com",
       // Gitee: "https://example.com",
-      GitHub: "https://github.com/Homebo1",
+      GitHub: "https://github.com/TanIsCoding",
       // Gitlab: "https://example.com",
       // Gmail: "https://example.com",
       // Instagram: "https://example.com",
