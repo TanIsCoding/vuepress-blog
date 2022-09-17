@@ -1,4 +1,7 @@
-# 前端 GitHub webhook自动打包
+---
+title: 前端 GitHub webhook自动打包
+date: 2022-09-18
+---
 需求:
 前端代码提交到GitHub,服务器能监听到提交并自动打包
 
