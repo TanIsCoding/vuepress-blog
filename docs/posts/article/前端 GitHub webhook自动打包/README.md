@@ -1,8 +1,13 @@
 ---
 title: 前端 GitHub webhook自动打包
 date: 2022-09-18
+category:
+- webhook
 tag:
-   - webhook
+- github
+- webhook
+- 自动
+- 部署
 ---
 需求:
 前端代码提交到GitHub,服务器能监听到提交并自动打包
@@ -24,8 +29,8 @@ github对应项目配置一个webhook,该webhook功能为接收到git push请求
 2.进入到GitHub对应的项目页面,先点击setting,再点击webhook
 
 
-![img.png](./article1/img.png)img.png
 
+![img.png](./img.png)
 
 
 3.点击addwebhook按钮
@@ -34,7 +39,8 @@ Payload URL 填写服务器公网IP和预留端口号
 Content type 选json 如图所示
 
 
-![img_1.png](./article1/img_1.png)
+
+![img_1.png](./img_1.png)
 
 
 5.点击add webhook按钮
@@ -43,26 +49,26 @@ Content type 选json 如图所示
 1. 前端demo项目随便改点东西提交上去
    点击我们配置好的webhook
 
-   ![img_2.png](./article1/img_2.png)
+   ![img_2.png](./img_2.png)
 
 选择 recent deliverives按钮
 
 
 
-![img_3.png](./article1/img_3.png)
+![img_3.png](./img_3.png)
 
 因为服务器还没配置对应的程序用来接收请求,发送消息列表左侧会显示红色警告
 
 
 
-![img_4.png](./article1/img_4.png)
+![img_4.png](./img_4.png)
 
 8.点一个post请求进去看看什么样子,心里有数
 重要的是respository里面的内容
 
 
 
-![img_5.png](./article1/img_5.png)
+![img_5.png](./img_5.png)
 
 第二步 nginx配置
 我们先通过nginx把这个前端服务手动跑起来,再考虑自动发版
@@ -74,7 +80,7 @@ Content type 选json 如图所示
 
 
 
-![img_6.png](./article1/img_6.png)
+![img_6.png](./img_6.png)
 
 2.拉取代码并打包
 确认下服务器的sshkey已经加到GitHub上去
@@ -94,7 +100,7 @@ npm run build
 
 
 
-![img_7.png](./article1/img_7.png)
+![img_7.png](./img_7.png)
 
 3.nginx配置
 本文不是教学nginx 所以简单说下
@@ -102,11 +108,11 @@ npm run build
 
 
 
-![img_8.png](./article1/img_8.png)
+![img_8.png](./img_8.png)
 
 配置nginx端口代理
 
-![img_9.png](./article1/img_9.png)
+![img_9.png](./img_9.png)
 
 
 
@@ -221,9 +227,14 @@ appid是执行完pm2 start index.js --watch会打印一个表单 上面的pid
 
 
 
-![img_10.png](./article1/img_10.png)
+![img_10.png](./img_10.png)
 
 到此 前端GitHub自动发版就搞定了 可以提交验证下 有问题评论区留言
 参考文档 [文档1](https://links.jianshu.com/go?to=https%3A%2F%2Fjuejin.cn%2Fpost%2F6844904148668792839%23heading-23) [文档2](https://links.jianshu.com/go?to=https%3A%2F%2Fjuejin.cn%2Fpost%2F6844903943466647560%23heading-2)
 
-转载：https://www.jianshu.com/p/64b8ea06c3ab
+
+
+作者：折叠幸福
+链接：https://www.jianshu.com/p/64b8ea06c3ab
+来源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
