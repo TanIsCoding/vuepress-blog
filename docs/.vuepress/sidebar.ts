@@ -10,8 +10,8 @@ export default sidebar([
             {
                 text: "转载",
                 collapsable: true,
-                prefix: "article/",
-                children: ["article1/前端 GitHub webhook自动打包.md"]
+                prefix: "reprint/",
+                children: ["article1/README.md"]
             },
         ],
     },
