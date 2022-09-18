@@ -11,7 +11,7 @@ export default sidebar([
                 text: "转载",
                 collapsable: true,
                 prefix: "article/",
-                children: ["前端 GitHub webhook自动打包.md"]
+                children: ["article1/前端 GitHub webhook自动打包.md"]
             },
         ],
     },

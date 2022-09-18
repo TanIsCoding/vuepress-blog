@@ -10,7 +10,7 @@ export default navbar([
             {
                 text: "转载",
                 prefix: "article/",
-                children: ["前端 GitHub webhook自动打包.md"]
+                children: ["article1/前端 GitHub webhook自动打包.md"]
             },
         ],
     },
